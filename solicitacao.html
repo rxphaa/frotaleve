@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitacao</title>
+
+    <!-- Latest compiled and minified CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Latest compiled JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<script src="script.js"></script>
+
+</head>
+<body>
+
+    <div class="container">
+
+    <div class="header">
+        <a href="index.html"> Voltar ao menu </a>
+        <img src="imagens/TotalEnergies_Logo_RGB.png" alt=""> 
+        <h1> Portal Frota Leve </h1>
+     </div> 
+
+    <div class="formsolicitacao">
+        <h2> Soliticões do Cartão Combustivel </h1>
+        <form onsubmit="validarFormulario()">
+            <div>
+            <label> Selecione o Motivo da solicitação:</label>
+            <select>
+                <option valeu="opcao"> Selecione uma das opções </option>
+                <option value="perdacartao"> Sinistro ou Emergencias </option>
+                <option value="aumentolimite"> Revisões </option>
+                <option value="trocarsenha"> Outros Assuntos </option>
+            </select>
+        </div>
+            <div> 
+                <label for="email"> Email:</label>
+                <input type="email" id="email" name="email"> </div>
+            <div>
+                <label for="placa"> Placa:</label>
+                <input type="text" id="placa" name="placa" placeholder="ABC1A01"> </div>
+            <div>
+                <label for="ncartao"> N° Cartão:</label>
+                <input type="number" id="ncartao" name="ncartao"> </div>
+            <div class="texto">
+                <label for="descricao"> Descreva sua solicitação: </label>
+                <textarea name="descricao" col="8" row="10" ></textarea> </div>
+
+                <input type="submit">
+        </form>
+
+    </div>
+
+    
+</body>
+</html>

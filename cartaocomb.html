@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartao Combustivel </title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="containercar">
+
+
+        <div class="header">
+            <a href="index.html"> Voltar ao menu </a>
+            <img src="imagens/TotalEnergies_Logo_RGB.png" alt=""> 
+            <h1> Portal Frota Leve </h1>
+         </div> 
+
+        <div class="formcartao">
+            <h2> Soliticões do Cartão Combustivel </h1>
+            <form onsubmit="validarFormulario()">
+                <div>
+                <label> Selecione o Motivo da solicitação:</label>
+                <select>
+                    <option valeu="opcao"> Selecione uma das opções </option>
+                    <option value="perdacartao"> Perda de Cartão </option>
+                    <option value="aumentolimite"> Aumento de Limite </option>
+                    <option value="trocarsenha"> Trocar a senha</option>
+                </select>
+            </div>
+                <div> 
+                    <label for="email"> Email:</label>
+                    <input type="email" id="email" name="email"> </div>
+                <div>
+                    <label for="placa"> Placa:</label>
+                    <input type="text" id="placa" name="placa" placeholder="ABC1A01"> </div>
+                <div>
+                    <label for="ncartao"> N° Cartão:</label>
+                    <input type="number" id="ncartao" name="ncartao"> </div>
+                <div class="texto">
+                    <label for="descricao"> Descreva sua solicitação: </label>
+                    <textarea name="descricao" col="8" row="10" ></textarea> </div>
+
+                    <input type="submit">
+            </form>
+        </div>
+
+    </div>
+
+<script>
+    function validarFormulario(){
+        alert( "Solicitação Envida, nosso time ira analisar sua demanda e entrara em contato. Obrigado.");
+        window.history.back();
+        
+
+    }
+</script>
+
+
+
+
+
+
+</body>
+
+
+</html>
